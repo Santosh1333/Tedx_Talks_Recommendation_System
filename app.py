@@ -22,7 +22,7 @@ df['details'] = df['title'] + ' ' + df['transcript']
 df['details'] = df['details'].apply(preprocess_text)
 
 # Load the pickled function
-with open('recommend_talks_with_sentiment.pkl', 'rb') as f:
+with open('savemodel.sav', 'rb') as f:
     recommend_talks_with_sentiment = pickle.load(f)
 
 # Streamlit app
